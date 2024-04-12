@@ -1,0 +1,27 @@
+.banner-container {
+    position: relative;
+
+    &.long {
+        width: 300px;
+        aspect-ratio: 1/.235;
+    }
+
+    &.short {
+        width: 300px;
+        aspect-ratio: 1/.235;
+    }
+}
+
+.banner {
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
