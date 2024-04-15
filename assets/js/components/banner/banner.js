@@ -10,6 +10,8 @@ const banner = (bannerType, banners) => {
         const newBanner = document.createElement('a');
         newBanner.href = link;
         newBanner.classList.add('banner', 'next');
+        newBanner.target = '_blank';
+        newBanner.rel = 'noopener noreferrer';
 
         const newImage = new Image();
         newImage.src = `${window.location.origin}/assets/img/components/banner/${img}.jpg`;

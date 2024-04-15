@@ -1,16 +1,16 @@
 .banner-container {
     position: relative;
     overflow: hidden;
+}
 
-    &.long {
-        width: 300px;
-        aspect-ratio: 1/.225;
-    }
+.banner-container.long {
+    width: 300px;
+    aspect-ratio: 1/.225;
+}
 
-    &.short {
-        width: 150px;
-        aspect-ratio: 1/.45;
-    }
+.banner-container.short {
+    width: 150px;
+    aspect-ratio: 1/.45;
 }
 
 .banner {
@@ -21,8 +21,14 @@
     height: 100%;
     opacity: 0;
     transition: opacity 1s;
+}
 
-    &.active {
-        opacity: 1;
-    }
+.banner.active {
+    opacity: 1;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
